@@ -1,0 +1,247 @@
+@font-face {
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-family: 'OpenSans';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-family: 'OpenSans';
+    font-weight: 600;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-family: 'OpenSans';
+    font-weight: 700;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-family: 'OpenSans';
+    font-weight: 800;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+    font-family: 'OpenSans';
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+   
+}
+header {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: #308C8B;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 200px;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+
+.header-wrapper h2 {
+    width: 540px;
+    margin: 20px;
+}
+
+.header-wrapper h3 {
+    width: 540px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+img {
+    position: absolute;
+    right: 0;
+    border-radius: 100px; 
+    align-self: center;
+    margin-right: 50px;
+
+}
+
+.intro-wrapper {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+
+}
+
+.social {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 11px;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 11px;
+    
+}
+
+.facebook {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.address::before {
+    content: url('../img/address.png');
+    margin-right: 10px;
+}
+
+.phone::before {
+    content: url('../img/phone.png');
+    margin-right: 10px;  
+}
+
+.email::before {
+    content: url('../img/mail.png');
+    margin-right: 10px;  
+}
+
+.linkedin::before {
+    content: url('../img/linkedin.png');
+    margin-right: 10px;  
+
+}
+.instagram::before {
+    content: url('../img/instagram.png');
+    margin-right: 10px;  
+}
+
+.facebook::before {
+    content: url('../img/facebook.png');
+    margin-right: 10px;  
+}
+
+.main-wrapper {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+    width: 100%;
+}
+
+.hobby {
+    width: 100%;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 960px;
+    margin: 0;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contacts {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+    
+}
+
+.footer-social {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 550px) {
+    header {
+        padding-left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .intro-wrapper {
+        padding-left: 20px;
+    }
+
+    .main-wrapper {
+        flex-wrap: wrap;
+        padding-left: 20px;
+        word-break: break-word;
+    }
+    
+}
+
+
+
